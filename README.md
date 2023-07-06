@@ -1,13 +1,11 @@
 # game-stats-handler
 
 ### requeriments
-
-docker 
-node v18+
+- docker 
+- node v18+
 
 
 ### to run kafka
-
 ```
     $ docker compose down
     $ docker compose up
@@ -31,11 +29,9 @@ control center: kafka management interface http://localhost:9021
     $ yarn web              # start only web application
     $ yarn start:dev        # start only kafka
 
-    !!!web application run on http://localhost:3000
 ```
 
-
-requests: [api.http](api.http)
+requests: [api.http](api.http) 
 
 
 - consumer
