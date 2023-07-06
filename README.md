@@ -7,13 +7,16 @@
 ```
 
 
-`control center`: kafka management interface http://localhost:9021
+control center: kafka management interface http://localhost:9021
 
 
 ```
     $ docker compose exec broker bash
     $ kafka-console-producer --topic actions --bootstrap-server http://localhost:9022
 ```
+
+
+requests: [api.http](api.http)
 
 
 - consumer
