@@ -1,5 +1,12 @@
 # game-stats-handler
 
+### requeriments
+
+docker 
+node v18+
+
+
+### to run kafka
 
 ```
     $ docker compose down
@@ -13,6 +20,18 @@ control center: kafka management interface http://localhost:9021
 ```
     $ docker compose exec broker bash
     $ kafka-console-producer --topic actions --bootstrap-server http://localhost:9022
+```
+
+### to run nest.js application
+
+```
+    $ yarn
+    $ yarn start:dev        # start web application and kafka
+
+    $ yarn web              # start only web application
+    $ yarn start:dev        # start only kafka
+
+    !!!web application run on http://localhost:3000
 ```
 
 
